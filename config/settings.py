@@ -1,3 +1,4 @@
+# from django.urls import reverse_lazy
 import os
 from pathlib import Path
 from decouple import config
@@ -21,6 +22,9 @@ ALLOWED_HOSTS = ['*']
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+# LOGIN_REDIRECT_URL = reverse_lazy('core:index')
+# LOGOUT_REDIRECT_URL = reverse_lazy('core:index')
 
 # Application definition
 

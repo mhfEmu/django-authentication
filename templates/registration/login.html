@@ -3,7 +3,7 @@
 {% block title %}Base Auth Login{% endblock %}
 
 {% block content %}
-	
+    <p>Log In</p>	
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
