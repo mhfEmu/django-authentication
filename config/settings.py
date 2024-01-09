@@ -22,6 +22,7 @@ ALLOWED_HOSTS = ['*']
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+AUTH_USER_MODEL = 'users.CustomUser'
 
 # LOGIN_REDIRECT_URL = reverse_lazy('core:index')
 # LOGOUT_REDIRECT_URL = reverse_lazy('core:index')
@@ -36,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'users',
 ]
 
 MIDDLEWARE = [
