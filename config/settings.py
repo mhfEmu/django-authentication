@@ -189,7 +189,7 @@ if DEBUG is False:
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     
-    ALLOWED_HOSTS = ['.31st_bcs.com']
+    ALLOWED_HOSTS = [config('ALLOWED_HOSTS')]
     
     DATABASES = {
         'default': {
